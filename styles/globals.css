@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
 html,
-
 body {
   padding: 0;
   margin: 0;
   font-family: Mitr, sans-serif;
   font-size: 18px;
-  background-color: #E9D5CA
+  background-color: #e9d5ca;
 }
 
 a {
@@ -17,10 +16,14 @@ a {
 * {
   box-sizing: border-box;
 }
-.bt-nav{
+.bt-nav {
   font-size: 1.5rem;
   font-weight: bold;
-  color:white;
-  font-family: Mitr
-
+  color: white;
+  font-family: Mitr;
+}
+.bg-Welcome {
+  position: absolute;
+  z-index: -1;
+  top: 12%;
 }
