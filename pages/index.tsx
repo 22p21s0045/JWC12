@@ -6,10 +6,13 @@ import styles from "../styles/Home.module.css";
 import { Grid } from "@mui/material";
 import Welcome from "../components/welcome/Welcome";
 import About from "../components/navbar/about/About";
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 const Home: NextPage = () => {
   return (
     <div>
       <Navbar />
+      <ParallaxProvider>
       <Grid container sx={{position: 'relative'}}>
         <Grid item xs={12}>
           <Welcome />
@@ -17,7 +20,7 @@ const Home: NextPage = () => {
         
       </Grid>
       <About />
-      
+      </ParallaxProvider>
     
 
     </div>

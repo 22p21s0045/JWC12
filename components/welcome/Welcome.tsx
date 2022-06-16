@@ -4,11 +4,12 @@ import background from "../../public/lottie/space.json";
 import { Stack, Typography, Button, Box } from "@mui/material";
 import { motion } from "framer-motion";
 import ReactTypingEffect from "react-typing-effect";
-
+import {Parallax} from "react-scroll-parallax";
 function Welcome() {
   return (
     <div>
       <Lottie animationData={background} loop={true} className="bg-Welcome" />
+      <Parallax translateY={[0, 10]}>
 
       <Stack
         sx={{
@@ -35,6 +36,7 @@ function Welcome() {
             },
             color: "#FF7272",
             fontFamily: "Mitr",
+            
           }}
         >
           <ReactTypingEffect text={["หมอหมึก"]} typingDelay={1} />
@@ -72,6 +74,7 @@ function Welcome() {
           </Button>
         </motion.div>
       </Stack>
+      </Parallax>
     </div>
   );
 }
