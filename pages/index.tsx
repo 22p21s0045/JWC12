@@ -7,6 +7,7 @@ import { Grid } from "@mui/material";
 import Welcome from "../components/welcome/Welcome";
 import About from "../components/navbar/about/About";
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Review from "../components/review/Review";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         
       </Grid>
       <About />
+      <Review/>
       </ParallaxProvider>
     
 
