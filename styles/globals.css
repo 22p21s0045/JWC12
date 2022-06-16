@@ -24,6 +24,6 @@ a {
 }
 .bg-Welcome {
   position: absolute;
-  z-index: -1;
-  top: 12%;
+
+  top: 11%;
 }

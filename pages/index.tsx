@@ -10,13 +10,13 @@ const Home: NextPage = () => {
   return (
     <div>
       <Navbar />
-      <Grid container >
+      <Grid container sx={{position: 'relative'}}>
         <Grid item xs={12}>
           <Welcome />
         </Grid>
         
       </Grid>
-      {/* <About /> */}
+      <About />
       
     
 

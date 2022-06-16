@@ -11,16 +11,17 @@ function Welcome() {
       <Lottie animationData={background} loop={true} className="bg-Welcome" />
 
       <Stack
-        sx={{ position: "absolute", top: {
-          xs: "27%",
-          md: "22%",
-          lg: "25%",
-          xl: "25%",
+        sx={{
+          position: "relative",
+          paddingTop: {
+            xs: "27%",
+            md: "22%",
+            lg: "20%",
+            xl: "10%",
+          },
 
-        }
-        
-        
-        , width: "100%" }}
+          width: "100%",
+        }}
         alignItems="center"
         spacing={10}
       >
