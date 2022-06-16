@@ -5,18 +5,21 @@ import Navbar from "../components/navbar/Navbar";
 import styles from "../styles/Home.module.css";
 import { Grid } from "@mui/material";
 import Welcome from "../components/welcome/Welcome";
-import About from "../components/navbar/about/about";
+import About from "../components/navbar/about/About";
 const Home: NextPage = () => {
   return (
     <div>
       <Navbar />
-      <Grid container>
+      <Grid container >
         <Grid item xs={12}>
           <Welcome />
         </Grid>
-
-        <About />
+        
       </Grid>
+      {/* <About /> */}
+      
+    
+
     </div>
   );
 };

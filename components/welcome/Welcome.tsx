@@ -16,7 +16,9 @@ function Welcome() {
           md: "22%",
           lg: "25%",
           xl: "25%",
+
         }
+        
         
         , width: "100%" }}
         alignItems="center"
