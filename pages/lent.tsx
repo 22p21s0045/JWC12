@@ -10,7 +10,7 @@ import Lottie from "lottie-react";
 import space from "../public/lottie/bgspace.json";
 import lentbg from "../public/lottie/lentbg.json";
 import Head from "next/head";
-function lent() {
+function Lent() {
   const [date, setDate] = useState(null);
   const [name, setName] = useState(null);
   const [phone, setPhone] = useState(null);
@@ -118,4 +118,4 @@ function lent() {
   );
 }
 
-export default lent;
+export default Lent;
