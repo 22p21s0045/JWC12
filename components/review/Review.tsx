@@ -114,7 +114,7 @@ function Review() {
                 <Avatar
                   alt="Remy Sharp"
                   src="/img/review/boy.png"
-                  sx={{ width: 100, height: 100 }}
+                  sx={{ width: 100, height: 100, backgroundColor: "#F9F2ED" }}
                 />
               </Box>
               <Typography
@@ -158,7 +158,7 @@ function Review() {
                 <Avatar
                   alt="Remy Sharp"
                   src="/img/review/girl.png"
-                  sx={{ width: 100, height: 100 }}
+                  sx={{ width: 100, height: 100, backgroundColor: "#F9F2ED" }}
                 />
               </Box>
               <Typography
