@@ -8,6 +8,7 @@ import Welcome from "../components/welcome/Welcome";
 import About from "../components/navbar/about/About";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Review from "../components/review/Review";
+import Footer from "../components/footer/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       </Grid>
       <About />
       <Review/>
+      <Footer/>
       </ParallaxProvider>
     
 
