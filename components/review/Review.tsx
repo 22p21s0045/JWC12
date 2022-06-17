@@ -6,6 +6,7 @@ import Image from "next/image";
 import Lottie from "lottie-react";
 import AOS from "aos";
 import { useInView } from 'react-intersection-observer';
+import {motion} from 'framer-motion';
 
 function Review() {
   const [ref, inView] = useInView();
@@ -47,10 +48,11 @@ function Review() {
           sx={{ marginTop: 1 }}
           ref={ref}
         >
-          
+         
 
           <Grid item xs={12} lg={3} md={4}>
-           
+          <motion.div whileHover={{ scale: 1.1 }}  animate={{ y: [0, 5, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}>
               <Paper sx={{ backgroundColor: "#F6E9E1" }}>
 
                 <Box
@@ -92,10 +94,14 @@ function Review() {
 
               </Paper>
             
-
+              </motion.div>
           </Grid>
+          
 
           <Grid item xs={12} lg={3} md={4}>
+          <motion.div whileHover={{ scale: 1.1 }} animate={{ y: [0, 5, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}>
+
             <Paper sx={{ backgroundColor: "#EADEDE", marginTop: 10 }}>
               <Box
                 sx={{
@@ -134,8 +140,12 @@ function Review() {
                 ต้องขอบคุณหมอหมึกในการช่วยให้ความสัมพันธ์ราบรื่นด้วยนะคะทํานายอะไรไว้ก็เเม่นทุกอย่างเลยค่ะ
               </Typography>
             </Paper>
+            </motion.div>
           </Grid>
           <Grid item xs={12} lg={3} md={4}>
+          <motion.div whileHover={{ scale: 1.1 }}  animate={{ y: [0, 5, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}>
+
             <Paper sx={{ backgroundColor: "#E0E0EC" }}>
               <Box
                 sx={{
@@ -175,6 +185,7 @@ function Review() {
                 ชีวิตคงเเย่เลยค่ะดีนะที่ป้องกันเรื่องร้ายๆทันเวลา
               </Typography>
             </Paper>
+            </motion.div>
           </Grid>
          
         </Grid>
