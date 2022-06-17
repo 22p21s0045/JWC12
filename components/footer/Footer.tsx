@@ -8,7 +8,7 @@ function Footer() {
         sx={{ position: "relative", marginTop: "10%" }}
         justifyContent="center"
       >
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} lg={6} sx={{paddingLeft:3}}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31679.98695632104!2d100.46121589775727!3d7.009473470884173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d2844e52c0e41%3A0xb36033e77dcce56e!2sHat%20Yai%2C%20Hat%20Yai%20District%2C%20Songkhla%2090110!5e0!3m2!1sen!2sth!4v1655442232385!5m2!1sen!2sth"
             width="600"
