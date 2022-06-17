@@ -17,6 +17,7 @@ import Image from "next/image";
 import calendar from "../../public/svg/calendar.svg";
 import info from "../../public/svg/info.svg";
 import note from "../../public/svg/note.svg";
+import Link from "next/link";
 function Navbar() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -51,9 +52,15 @@ function Navbar() {
               sx={{ position: "absolute", right: "10%" }}
               spacing={10}
             >
+              <Link href="#about">
               <Button className="bt-nav">เกี่ยวกับหมอหมึก</Button>
+              </Link>
+              <Link href="#review">
               <Button className="bt-nav">บทความ</Button>
+              </Link>
+              <Link href="#lent">
               <Button className="bt-nav">จองคิว</Button>
+              </Link>
             </Stack>
           )}
         </Toolbar>
@@ -69,12 +76,15 @@ function Navbar() {
       >
         <div>
           <Stack spacing={5}>
+            <Link href="#about">
             <Button
               sx={{ color: "black", fontFamily: "Mitr", fontSize: "1.5rem" }}
             >
               เกี่ยวกับหมอหมึก
               <Image src={info} width={40} height={40} />
             </Button>
+            </Link>
+            <Link href="#review">
 
             <Button
               sx={{ color: "black", fontFamily: "Mitr", fontSize: "1.5rem" }}
@@ -82,12 +92,15 @@ function Navbar() {
               บทความ
               <Image src={note} width={40} height={40} />
             </Button>
+            </Link>
+            <Link href="#lent">
             <Button
               sx={{ color: "black", fontFamily: "Mitr", fontSize: "1.5rem" }}
             >
               จองคิว
               <Image src={calendar} width={40} height={40} />
             </Button>
+            </Link>
           </Stack>
         </div>
       </Drawer>
