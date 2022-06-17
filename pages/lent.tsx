@@ -1,11 +1,14 @@
 import React from "react";
-import { Grid, TextField, Stack } from "@mui/material";
+import { Grid, TextField, Stack, Box } from "@mui/material";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 import swal from "sweetalert2";
+import Lottie from "lottie-react";
+import space from "../public/lottie/bgspace.json";
+import lentbg from "../public/lottie/lentbg.json";
 function lent() {
   const [date, setDate] = useState(null);
   const [name, setName] = useState(null);
@@ -25,7 +28,9 @@ function lent() {
         .fire({
           title: "ยืนยันการจอง",
 
-          text: `วันที่จอง ${new Date(date).toLocaleDateString()} ชื่อ ${name} เบอร์โทร ${phone}`,
+          text: `วันที่จอง ${new Date(
+            date
+          ).toLocaleDateString()} ชื่อ ${name} เบอร์โทร ${phone}`,
           icon: "warning",
           showCancelButton: true,
           confirmButtonColor: "#3085d6",
@@ -35,11 +40,7 @@ function lent() {
         })
         .then((result) => {
           if (result.value) {
-            swal.fire(
-              "จองหมอหมึกสำเร็จ",
-              "ขอบคุณสําหรับการจอง",
-              "success"
-            );
+            swal.fire("จองหมอหมึกสำเร็จ", "ขอบคุณสําหรับการจอง", "success");
           }
         });
     } else {
@@ -58,10 +59,44 @@ function lent() {
 
   return (
     <div>
-      <Stack spacing={3}>
-        <TextField label="ชื่อ" onChange={handle_name} />
+      <Box sx={{ position: "absolute",width: "100%",height: "100vh"}}>
+        <Lottie animationData={lentbg} loop={true} style={{ height: "100%" }} />
 
-        <TextField label="เบอร์โทร" onChange={handle_phone} />
+        </Box>
+
+      <Stack
+        spacing={3}
+        sx={{
+          position: "absolute",
+          width: "50%",
+          top: "30%",
+          left: "30%",
+          backgroundColor: "#F6E7D8",
+          borderRadius: "10px",
+          border: "5px solid #000",
+        }}
+      >
+        <TextField
+          label="ชื่อ"
+          onChange={handle_name}
+          sx={{
+            width: "50%",
+            marginTop: 10,
+            left: "25%",
+            position: "relative",
+          }}
+        />
+
+        <TextField
+          label="เบอร์โทร"
+          onChange={handle_phone}
+          sx={{
+            width: "50%",
+            marginTop: 10,
+            left: "25%",
+            position: "relative",
+          }}
+        />
 
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <DateTimePicker
