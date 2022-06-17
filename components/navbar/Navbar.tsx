@@ -53,13 +53,13 @@ function Navbar() {
               spacing={10}
             >
               <Link href="#about">
-              <Button className="bt-nav">เกี่ยวกับหมอหมึก</Button>
+              <Button  sx={{fontSize:"1.5rem",fontWeight: "bold",color:"white",fontFamily:"Mitr"}}>เกี่ยวกับหมอหมึก</Button>
               </Link>
               <Link href="#review">
-              <Button className="bt-nav">บทความ</Button>
+              <Button  sx={{fontSize:"1.5rem",fontWeight: "bold",color:"white",fontFamily:"Mitr"}}>บทความ</Button>
               </Link>
               <Link href="#lent">
-              <Button className="bt-nav">จองคิว</Button>
+              <Button sx={{fontSize:"1.5rem",fontWeight: "bold",color:"white",fontFamily:"Mitr"}}>จองคิว</Button>
               </Link>
             </Stack>
           )}
