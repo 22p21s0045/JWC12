@@ -16,7 +16,7 @@ function About() {
         alignItems="center"
       >
         <Grid item xs={12} lg={6} md={6}>
-          <Parallax translateY={[-20, 20]}>
+          <Parallax translateY={[0, 20]}>
           <Paper sx={{ backgroundColor: "#DBCEFF", marginLeft: { lg: "16%" } }}>
             <Typography
               sx={{
@@ -59,8 +59,8 @@ function About() {
           </Parallax>
         </Grid>
         <Grid item xs={12} lg={6} md={6} >
-          <Parallax translateY={[0, 20]}>
-          <Box sx={{position:"relative",left:{lg:"30%",transform: "rotate(20deg)"},}}>
+          <Parallax translateY={[0, 10]}>
+          <Box sx={{position:"relative",left:{lg:"30%",transform: "rotate(7deg)"},}}>
           <Image
             src="/img/avatar.png"
             alt="calendar"

@@ -13,6 +13,10 @@ import Footer from "../components/footer/Footer";
 const Home: NextPage = () => {
   return (
     <div>
+      <Head>
+        <title>หมอหมึก</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
       <Navbar />
       <ParallaxProvider>
         <div id="lent">

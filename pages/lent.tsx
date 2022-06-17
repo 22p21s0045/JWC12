@@ -9,6 +9,7 @@ import swal from "sweetalert2";
 import Lottie from "lottie-react";
 import space from "../public/lottie/bgspace.json";
 import lentbg from "../public/lottie/lentbg.json";
+import Head from "next/head";
 function lent() {
   const [date, setDate] = useState(null);
   const [name, setName] = useState(null);
@@ -59,10 +60,14 @@ function lent() {
 
   return (
     <div>
-      <Box sx={{ position: "absolute",width: "100%",height: "100vh"}}>
-        <Lottie animationData={lentbg} loop={true} style={{ height: "100%" }} />
+      <Head>
+        <title>จองวัน</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
 
-        </Box>
+      <Box sx={{ position: "absolute", width: "100%", height: "100vh" }}>
+        <Lottie animationData={lentbg} loop={true} style={{ height: "100%" }} />
+      </Box>
 
       <Stack
         spacing={3}

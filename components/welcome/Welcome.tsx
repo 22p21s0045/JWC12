@@ -5,6 +5,7 @@ import { Stack, Typography, Button, Box } from "@mui/material";
 import { motion } from "framer-motion";
 import ReactTypingEffect from "react-typing-effect";
 import {Parallax} from "react-scroll-parallax";
+import Link from "next/link"
 function Welcome() {
   return (
     <div>
@@ -56,10 +57,12 @@ function Welcome() {
         >
           “ผู้มีประสบการณ์พยากรณ์กว่า 10 ปี พร้อมคําพยากรณ์ที่เเม่นยํา”
         </Typography>
+        <Link href="/lent">
         <motion.div
           animate={{ y: [0, 5, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
+          
           <Button
             sx={{
               fontSize: "2rem",
@@ -73,6 +76,7 @@ function Welcome() {
             จองคิว
           </Button>
         </motion.div>
+        </Link>
       </Stack>
       </Parallax>
     </div>
